@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      margin: 0;
+      font-family: sans-serif;
+    }
+    .fullscreen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .fullscreen img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .description {
+      margin-top: 20px;
+      text-align: center;
+      max-width: 700px;
+    }
+    .download-buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+    }
+    .download-buttons a {
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .download-buttons a:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+  <div class="fullscreen">
+    <img id="moviePoster" src="" alt="Movie Poster">
+    <div class="description" id="movieDescription"></div>
+    <div class="download-buttons">
+      <a id="download1080p" href="#" target="_blank">Download 1080p</a>
+      <a id="download720p" href="#" target="_blank">Download 720p</a>
+    </div>
+  </div>
+
+  <script src="movie.js"></script>
+</body>
+</html>
